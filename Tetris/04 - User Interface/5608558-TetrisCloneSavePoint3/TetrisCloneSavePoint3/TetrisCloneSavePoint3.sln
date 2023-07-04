@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{9E42EF22-E9F6-B034-39EF-28AED5C07A31}") = "TetrisCloneSavePoint3", "Assembly-CSharp.csproj", "{5276B380-7D35-397C-62CC-CAC23CC5DDC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5276B380-7D35-397C-62CC-CAC23CC5DDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5276B380-7D35-397C-62CC-CAC23CC5DDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5276B380-7D35-397C-62CC-CAC23CC5DDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5276B380-7D35-397C-62CC-CAC23CC5DDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
