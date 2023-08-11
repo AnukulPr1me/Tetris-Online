@@ -8,7 +8,7 @@ public class Board : MonoBehaviour
     public Transform m_emptySprite;
     public int m_Height = 30;
     public int m_Width = 10;
-    public int m_Header = 8;
+    public int m_Header = 10;
 
     Transform[,] m_Grid;
     private void Awake()
