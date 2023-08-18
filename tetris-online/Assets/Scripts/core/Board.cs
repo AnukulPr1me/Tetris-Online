@@ -28,6 +28,29 @@ public class Board : MonoBehaviour
         
     }
 
+    bool IsWithinBoard(int x, int y)
+    {
+        return (x >= 0 && x < m_Width && y >= 0);
+    }
+
+    public bool isValidPosition( Shape shape )
+    {
+        foreach (Transform child in shape.transform)
+        {
+            Vector2 pos = Vectorf.Round(child.position);
+            if(!IsWithinBoard((int) pos.x, (int) pos.y))
+            {
+                return false;
+            }
+
+            if(isOccupied((int) pos.x, (int) pos.y, shape))
+            {
+                return false;
+            }
+                
+        }
+        return true;
+    }
     void DrawEmptyCells()
     {
         if (m_emptySprite != null)
@@ -49,5 +72,23 @@ public class Board : MonoBehaviour
         }
     }
     
-    
+    public void StoreShapeInGrid(Shape shape)
+    {
+        if(shape == null)
+        {
+            return;
+        }
+
+        foreach (Transform child in shape.transform)
+        {
+            Vector2 pos = Vectorf.Round(child.position);
+            m_Grid[(int) pos.x, (int) pos.y] = child;
+
+        }
+    }
+
+    bool isOccupied(int x, int y, Shape shape)
+    {
+        return (m_Grid[x, y] != null && m_Grid[x, y].parent != shape.transform);
+    }
 }
