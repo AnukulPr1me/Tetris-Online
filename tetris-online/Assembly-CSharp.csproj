@@ -59,6 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\core\Board.cs" />
+    <Compile Include="Assets\Scripts\core\Vectorf.cs" />
+    <Compile Include="Assets\Scripts\core\GameController.cs" />
+    <Compile Include="Assets\Scripts\core\Spawner.cs" />
+    <Compile Include="Assets\Scripts\core\Shape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
